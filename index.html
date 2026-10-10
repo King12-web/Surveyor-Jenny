@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surveyor Jenny | Surveying · Art · Real Estate</title>
+  <meta name="description" content="Real estate surveyor and paint artist based in Lagos, Nigeria. Land surveying, property mapping, real estate consultancy and original paintings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Reusable logo mark -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo-mark" viewBox="0 0 48 48">
+      <path d="M6 22 L24 6 L42 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M31 10 V6 h4 v7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <text x="10" y="40" font-family="Playfair Display, Georgia, serif" font-size="22" font-weight="600" fill="currentColor">S</text>
+      <text x="22" y="44" font-family="Playfair Display, Georgia, serif" font-size="22" font-weight="600" fill="currentColor">J</text>
+    </symbol>
+  </svg>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo" aria-label="Surveyor Jenny home">
+        <svg class="logo-mark" style="color:var(--terracotta)"><use href="#logo-mark"/></svg>
+        <div>
+          <div class="logo-name">SURVEYOR JENNY</div>
+          <div class="logo-tag">Surveying &nbsp;|&nbsp; Art &nbsp;|&nbsp; Real Estate</div>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary header-cta">Get In Touch
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-img" role="img" aria-label="Jenny using a surveying instrument beside one of her paintings"><img src="media/WhatsApp Image 2026-10-10 at 1.34.00 PM.jpeg" alt=""></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="eyebrow">Real Estate Surveyor &nbsp;&amp;&nbsp; Paint Artist</p>
+        <h1>Precision in Every Measurement. <span>Creativity in Every Stroke.</span></h1>
+        <p>Combining professional surveying expertise with artistic expression to transform spaces, define properties, and bring creative visions to life.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore My Work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-photo reveal">
+        <img src="media/cc4297ae-97f3-4c6f-bb76-38b7c440036e.jpg" alt="My Picture" />
+      </div>
+
+      <div class="about-text reveal">
+        <p class="eyebrow">About Me</p>
+        <h2 class="title">Surveyor Jenny</h2>
+        <p>I am a real estate surveyor with a passion for precision and a love for creativity. With experience in land measurement, property mapping and real estate consultancy, I help clients make informed decisions about their land and property.</p>
+        <p>Beyond the field, I express my creativity through painting, turning ideas, emotions and spaces into visual masterpieces.</p>
+
+        <div class="stats">
+          <div class="stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg>
+            <div><strong>6+</strong><small>Years Experience</small></div>
+          </div>
+          <div class="stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+            <div><strong>30+</strong><small>Projects Completed</small></div>
+          </div>
+          <div class="stat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9.5h.01M15 9.5h.01"/></svg>
+            <div><strong>100%</strong><small>Client Satisfaction</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-list reveal">
+        <div class="about-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/></svg>
+          <div><h4>Land Surveying</h4><p>Property & boundary surveys</p></div>
+        </div>
+        <div class="about-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M3 13h18M11 12v2h2v-2"/></svg>
+          <div><h4>Real Estate Consultancy</h4><p>Property advice & development</p></div>
+        </div>
+        <div class="about-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 100 18c1.2 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.7 1.7-1.7H16a5 5 0 005-5c0-4-4-7.2-9-7.2z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7" r="1.2"/></svg>
+          <div><h4>Painting & Art</h4><p>Original art & commissions</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="eyebrow">Services</p>
+      <h2 class="title">What I Offer</h2>
+
+      <div class="services-grid">
+        <article class="service reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="2" width="6" height="5" rx="1"/><path d="M12 7v3M12 10L5 22M12 10l7 12M12 10v12M8 16h8"/></svg>
+          <h3>Land Surveying</h3>
+          <p>Accurate land measurement and boundary determination.</p>
+        </article>
+        <article class="service reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3l-4 2v16l4-2 5 2 5-2 4 2V5l-4-2-5 2z" /><circle cx="12" cy="12" r="3"/><path d="M12 9V7"/></svg>
+          <h3>Topographic Surveys</h3>
+          <p>Detailed maps and elevation data.</p>
+        </article>
+        <article class="service reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 4.5-9 4.5-9-4.5z"/><path d="M3 12l9 4.5 9-4.5M3 16.5L12 21l9-4.5"/></svg>
+          <h3>Property Mapping</h3>
+          <p>Clear, reliable property maps and plans.</p>
+        </article>
+        <article class="service reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l9-8 9 8"/><path d="M5 10v11h14V10"/><rect x="10" y="12" width="4" height="4"/><path d="M16 5V3h2v4"/></svg>
+          <h3>Real Estate Consultancy</h3>
+          <p>Expert advice for property decisions.</p>
+        </article>
+        <article class="service reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 100 18c1.2 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.7 1.7-1.7H16a5 5 0 005-5c0-4-4-7.2-9-7.2z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7" r="1.2"/></svg>
+          <h3>Art & Paintings</h3>
+          <p>Original pieces and commissioned artwork.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container gallery-grid">
+      <div class="gallery-intro reveal">
+        <p class="eyebrow">My Art Gallery</p>
+        <h2 class="title">Art That Speaks</h2>
+        <p>A collection of paintings that tell stories, express emotions and bring spaces to life.</p>
+        <a href="#gallery" class="btn btn-primary">View Gallery
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="gallery-imgs reveal">
+        <button><img src="media/WhatsApp Image 2026-10-09 at 8.49.30 PM.jpeg" alt="A space Portrait" loading="lazy" /></button>
+        <button><img src="media/WhatsApp Image 2026-10-09 at 8.49.30 PM (1).jpeg" alt="A singer's portrait" loading="lazy" /></button>
+        <button><img src="media/WhatsApp Image 2026-10-09 at 8.49.30 PM (2).jpeg" alt="With a lovers of Art" loading="lazy" /></button>
+        <button><img src="media/WhatsApp Image 2026-10-09 at 11.25.12 AM.jpeg" alt="A client's work" loading="lazy" /></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <p class="eyebrow">Featured Projects</p>
+      <h2 class="title">My Work in Action</h2>
+
+      <div class="projects-grid">
+        <div class="projects-col reveal">
+          <h3>Surveying Projects</h3>
+          <div class="project-cards">
+            <div class="project">
+              <img src="media/WhatsApp Image 2026-10-10 at 1.34.00 PM.jpeg" alt="Surveying equipment on a residential plot" class="fit-whole" loading="lazy" />
+              <h4>Land Measurement</h4>
+              <small>Residential Estate, Lagos</small>
+            </div>
+            <div class="project">
+              <img src="media/WhatsApp Image 2026-10-09 at 11.25.11 AM.jpeg" alt="Aerial view of a mapped development" class="fit-whole" loading="lazy" />
+              <h4>Survey Documentation</h4>
+              <small>Powell company, Enugu</small>
+            </div>
+          </div>
+        </div>
+        <div class="projects-col reveal">
+          <h3>Art Projects</h3>
+          <div class="project-cards">
+            <div class="project">
+              <img src="media/WhatsApp Image 2026-10-09 at 8.49.31 PM.jpeg" alt="Custom portrait painting" loading="lazy" />
+              <h4>Custom Painting</h4>
+              <small>Portrait Series</small>
+            </div>
+            <div class="project">
+              <img src="media/WhatsApp Image 2026-10-09 at 11.30.50 AM.jpeg" alt="Paint brushes in a jar" loading="lazy" />
+              <h4>Commissioned Piece</h4>
+              <small>Interior Wall Art</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="title">Let’s Work Together</h2>
+        <p>Have a property to survey or an artistic vision to bring to life? I’d love to hear from you.</p>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>
+            <a href="tel:+2348012345678">+234 816 021 8851</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:hello@surveyorjenny.com">Jenniferuzodimma3@gmail.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Lagos, Nigeria
+          </li>
+        </ul>
+      </div>
+
+      <div class="reveal">
+        <form id="contactForm" action="#" method="POST">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <select name="subject" required>
+            <option value="" disabled selected>Subject</option>
+            <option>Land Surveying</option>
+            <option>Topographic Survey</option>
+            <option>Property Mapping</option>
+            <option>Real Estate Consultancy</option>
+            <option>Art Commission</option>
+            <option>Other</option>
+          </select>
+          <input type="tel" name="phone" placeholder="Phone (optional)" />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form-note" id="formNote">Thanks! Your message has been sent.</p>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Decorative brush strokes -->
+    <svg class="brush" viewBox="0 0 300 160" aria-hidden="true">
+      <g fill="none" stroke="#d9a58a" stroke-width="1" opacity=".7">
+        <path d="M60 10 C140 30 200 0 300 30"/><path d="M50 22 C140 42 200 12 300 42"/><path d="M40 34 C140 54 200 24 300 54"/>
+      </g>
+      <path d="M40 140 C90 100 170 70 290 60 L290 80 C190 92 120 115 60 150 Z" fill="#c8794f" opacity=".85"/>
+      <path d="M120 155 C170 125 230 108 300 100 L300 118 C240 125 180 140 140 160 Z" fill="#2f3f37" opacity=".9"/>
+    </svg>
+  </section>
+
+  <!-- Footer  -->
+  <footer>
+    <div class="container footer-inner">
+      <a href="#home" class="logo">
+        <svg class="logo-mark" style="color:#e9e1d8"><use href="#logo-mark"/></svg>
+        <div>
+          <div class="logo-name">SURVEYOR JENNY</div>
+          <div class="logo-tag">Surveying &nbsp;|&nbsp; Art &nbsp;|&nbsp; Real Estate</div>
+        </div>
+      </a>
+      <div class="footer-right">
+        <span>© <span id="year">2026</span> Surveyor Jenny. All rights reserved.</span>
+        <a href="#home" class="to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Light Box -->
+  <div class="lightbox" id="lightbox"><img src="" alt="" /></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
