@@ -39,13 +39,30 @@ document.querySelectorAll('.gallery-imgs button, .project img').forEach(el => {
 lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
 
-// Contact form (demo only — swap for Formspree/Web3Forms)
-document.getElementById('contactForm').addEventListener('submit', e => {
-  if (e.target.getAttribute('action') === '#') {
-    e.preventDefault();
-    document.getElementById('formNote').style.display = 'block';
-    e.target.reset();
-  }
-});
+// Contact form: opens the user's email app with everything filled in
+const contactForm = document.getElementById('contactForm');
 
-document.getElementById('year').textContent = new Date().getFullYear();
+contactForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const name = contactForm.querySelector('[name="name"]').value.trim();
+  const email = contactForm.querySelector('[name="email"]').value.trim();
+  const subject = contactForm.querySelector('[name="subject"]').value;
+  const phone = contactForm.querySelector('[name="phone"]').value.trim();
+  const message = contactForm.querySelector('[name="message"]').value.trim();
+
+  const body =
+    `Name: ${name}\n` +
+    `Email: ${email}\n` +
+    (phone ? `Phone: ${phone}\n` : '') +
+    `\n${message}`;
+
+  const mailtoLink =
+    `mailto:Jenniferuzodimma3@gmail.com` +
+    `?subject=${encodeURIComponent(subject + ' – Enquiry from ' + name)}` +
+    `&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailtoLink;
+
+  document.getElementById('formNote').style.display = 'block';
+});
